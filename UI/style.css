@@ -1,0 +1,65 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.menuBarContainer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 60px; 
+    background-color: rgb(31, 42, 59); 
+    padding: 0 20px; 
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+  }
+  
+  #logoText {
+    font-size: 3vh; 
+  }
+  
+  #menu {
+    display: flex; 
+    gap: 2.5vh; 
+    font-size: 1.7vh; 
+    flex-grow: 1; 
+    justify-content: center; 
+  }
+  a {
+    outline: none; 
+    text-decoration: none; 
+    color: white;
+  }
+  #userMenu{
+    display: flex; 
+    gap: 20px; 
+    font-size: 1.7vh; 
+    flex-grow: 1; 
+    justify-content: right;
+  }
+  .searchBarField{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 10vh; 
+    background-color:rgb(0, 156, 156);
+  }
+  #search{
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
+    
+  }
+  input[type = "text"]{
+    border-radius: 5vh;
+    border-style: none;
+    width: 35vh;
+    height: 4vh;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  #searchButton{
+    border-radius: 5vh;
+    border-style: none;
+    width: 4vh;
+    height: 4vh;
+  }
