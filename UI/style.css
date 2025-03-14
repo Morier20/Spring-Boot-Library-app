@@ -13,11 +13,9 @@ body, html {
     word-break: break-word;
     white-space: normal;
   }
-  
   #logoText {
     font-size: 3vh; 
   }
-  
   #menu {
     display: flex; 
     gap: 2.5vh; 
@@ -25,7 +23,7 @@ body, html {
     flex-grow: 1; 
     justify-content: center; 
   }
-  a {
+  .menuLinks {
     outline: none; 
     text-decoration: none; 
     color: white;
@@ -48,18 +46,73 @@ body, html {
     display: flex;
     justify-content: center; 
     flex-grow: 1; 
+    position: relative;
+    width: 50vh; 
     
   }
   input[type = "text"]{
-    border-radius: 5vh;
-    border-style: none;
+    display: flex;
     width: 35vh;
-    height: 4vh;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1.2vh 2.5vh 1.2vh 1.5vh; 
+    font-size: 1.6vh;
+    border-radius: 25px; 
+    border: 1px solid #ccc;
+    outline: none;
   }
   #searchButton{
-    border-radius: 5vh;
-    border-style: none;
-    width: 4vh;
-    height: 4vh;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 33vh;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .arrivals{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(243, 243, 243);
+    height: 50vh;
+  }
+  #newArrivals {
+    margin-left: 10vw; 
+    margin-top: 3vh;
+  }
+  .bookPanels{
+    display: flex;
+    flex-direction: row;
+  }
+  .panel{
+    display: flex;
+    flex-direction: column;
+    margin-top: -4vh;
+    margin-left: 10vw;
+    }
+  .upperPart{
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    width: 20vh;
+    height: 30vh;
+    background-color: wheat;
+    margin-top: 5vh;
+  }
+  .lowerPart{
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 20vh;
+    height: 7.5vh;
+  }
+  .bookInformation{
+    outline: none; 
+    text-decoration: none; 
+    color: black;
+  }
+  #newArrivals {
+    margin-left: 10vw; 
   }
