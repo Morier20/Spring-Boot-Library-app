@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href = "style.css">
-    <script src = "script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -18,13 +18,14 @@
                 <a href="#" class="menuLinks">Browse</a>
                 <a href="#" class="menuLinks">Events</a>
                 <a href="#" class="menuLinks">Services</a>
-                <a href="#" class="menuLinks">About</a>
+                <a href="#" class="menuLinks" id="aboutButton" role="button">About</a>
             </div>
             <div id = "userMenu">
                 <a href="#" class="menuLinks">My Loans</a>
                 <a href="#" class="menuLinks">My Account</a>
             </div> 
         </div>
+        
     </header>
     <main>
         <div class = "searchBarField">
@@ -32,10 +33,30 @@
                 <input type="text" placeholder=" Search for books,authors,subjects...">
                 <input type="button" value="🔍" id="searchButton"/>
             </div>
-            
         </div>
-
-
+        <div class="fixed-overlay">
+            <div class="modal">
+                <div class="popUpWindow">
+                    <div class="navigationButtons">
+                        <input type="button" value="X" class="closeButton">
+                    </div>
+                    <h1>City Library</h1>
+                    <h2>Welcome to City Library,</h2>
+                    <span>
+                        your community hub for knowledge, discovery, and connection. 
+                        Established in 1987, we've been serving our community for over
+                        35 years with a commitment to providing accessible information
+                        and resources for all. Our Mission At City Library, we believe
+                        that access to information is
+                        a fundamental right. Our mission is to inspire lifelong
+                        learning, advance knowledge, and strengthen our community
+                        by providing free access to information, resources, 
+                        and experiences.
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
         <div class="arrivals">
             <h1 class="title">New arrivals</h1>
             <div class = bookPanels>
@@ -214,8 +235,9 @@
                 </div>
             </div>
         </div>
-    </div>        
+    </div>
+    <script src = "script.js"></script>
     </main>
-    
 </body>
+
 </html>
