@@ -227,6 +227,67 @@ input[type="text"] {
   height: 100%;
   background-color: rgba(0,0,0,0.5);
 }
+.fixed-overlaySingIn{
+  display: none;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+  background-color: rgb(255, 255, 255);
+}
+.modalSignIn{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -25vw;
+  z-index: 999999;
+  margin-top: -10vh;
+}
+.popUpWindowSingIn{
+  position: fixed;
+  background-color: white;
+  z-index: 999999;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  margin-top: -20vh;
+  flex-direction: column;
+  border-radius: 1.2vw;
+  border: 3px solid  rgb(31, 42, 59);
+}
+.modalSignIn img{
+  width: 25vw;
+  height: 49.5vh;
+  border-radius: 1vw;
+  padding-left: 2vw;
+}
+.popUpWindowSingIn h1{
+  justify-content: left;
+  padding-left: 5vw;
+  padding-top: 5vh;
+}
+.popUpWindowSingIn input[type="text"]{
+  width: 15vw;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+.popUpWindowSingIn input[type="button"]{
+  width: 5vw;
+  margin-left: 5vw;
+  margin-top: 7vh;
+  background-color:  rgb(31, 42, 59);
+  color: white;
+  border-radius: 5vw;
+  
+}
+.composition{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
 .modal {
   position: absolute;
   left: 50%;

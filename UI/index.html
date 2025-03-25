@@ -22,7 +22,7 @@
             </div>
             <div id = "userMenu">
                 <a href="#" class="menuLinks">My Loans</a>
-                <a href="#" class="menuLinks">My Account</a>
+                <a href="#" class="menuLinks" id="myAccount" role="button">My Account</a>
             </div> 
         </div>
         
@@ -32,6 +32,28 @@
             <div id = "search">
                 <input type="text" placeholder=" Search for books,authors,subjects...">
                 <input type="button" value="🔍" id="searchButton"/>
+            </div>
+        </div>
+        <div class="fixed-overlaySingIn">
+            <div class="modalSignIn">
+                <div class="popUpWindowSingIn">
+                    <div class="composition">
+                        <div class="logInMenu">
+                            <h1>Sign in</h1>
+                        <input type="text" placeholder="Login">
+                        <input type="text" placeholder="Password">
+                        
+                        <div class="logButtons">
+                            <input type="button" value="Login">
+                            <span>or</span>
+                            <a>Sign in</a>
+                        </div>
+                        
+                    </div>
+                    <img src="src/library.jpg">
+                    </div>
+                    
+                </div>
             </div>
         </div>
         <div class="fixed-overlay">
@@ -59,6 +81,7 @@
         </div>
         <div class="arrivals">
             <h1 class="title">New arrivals</h1>
+                        <!-- In the future will be loaded from database -->
             <div class = bookPanels>
                 <div class="panel">
                     <div class="upperPart">
@@ -104,7 +127,7 @@
 
         <div class="browseCategories">
             <h1 class="title">Browse by Category</h1>
-            <div class="allCategoryPanels">
+            <div class="allCategoryPanels"> 
                     <div class="categoryPanel">
                         <a href="#" class = "sectionInformation">
                             <div class="section">

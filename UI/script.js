@@ -15,3 +15,18 @@ modalWindow.addEventListener('click', (event) => {
         modalWindow.style.display = 'none';
     }
 });
+const signInWindow = document.querySelector('.fixed-overlaySingIn');
+const openAccountMenu = document.getElementById('myAccount');
+openAccountMenu.addEventListener('click', (event) => {
+    event.preventDefault();
+    signInWindow.style.display = 'flex';
+    signInWindow.style.pointerEvents = 'auto';
+    console.log('click event');
+});
+signInWindow.addEventListener('click', (event) => {
+    if (event.target === signInWindow) {
+        signInWindow.style.display = 'none';
+        // Reset pointer-events when closing
+        signInWindow.style.pointerEvents = 'none';
+    }
+});
