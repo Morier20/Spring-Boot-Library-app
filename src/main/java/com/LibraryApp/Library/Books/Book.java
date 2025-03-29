@@ -1,10 +1,21 @@
 package com.LibraryApp.Library.Books;
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
+
+@Entity
+@Table(name = "books")
 public class Book {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "name", nullable = false)
     private String name;
+    @Column(name = "author", nullable = false)
     private String author;
+    @Column(name = "count_available")
     private Long countAvailable;
+    @Column(name = "date")
     private LocalDate date;
 
     public Book(Long id, String name, String author, Long countAvailable, LocalDate date) {
@@ -13,6 +24,9 @@ public class Book {
         this.author = author;
         this.countAvailable = countAvailable;
         this.date = date;
+    }
+
+    public Book() {
     }
 
     public Long getId() {

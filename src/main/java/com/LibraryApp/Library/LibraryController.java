@@ -1,5 +1,6 @@
-package com.LibraryApp.Library.Books;
+package com.LibraryApp.Library;
 
+import com.LibraryApp.Library.Books.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,7 +12,7 @@ import java.util.List;
 @RestController
 public class LibraryController {
 
-    private final Services services;  // инжекция зависимости
+    private final Services services;
 
     @Autowired
     public LibraryController(Services services) {
@@ -23,7 +24,6 @@ public class LibraryController {
     public List<Book> showAll() {
         return services.showAllBooks();
     }
-
     // Добавляем новую книгу
     @PostMapping("/newBook")
     public void addBook(@RequestBody Book book) {

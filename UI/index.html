@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href = "style.css">
-    
 </head>
 <body>
     <header>
@@ -14,14 +13,14 @@
                <a href="#" class="menuLinks">City LibraryHome</a> 
             </div>
             <div id="menu">
-                <a href="#" class="menuLinks">Home</a>
-                <a href="#" class="menuLinks">Browse</a>
-                <a href="#" class="menuLinks">Events</a>
-                <a href="#" class="menuLinks">Services</a>
+                <a href="#" class="menuLinks" id="homeButton" role="button">Home</a>
+                <a href="#" class="menuLinks" id="browseButton" role="button">Browse</a>
+                <a href="#" class="menuLinks" id="eventsButton" role="button">Events</a>
+                <a href="#" class="menuLinks" id="servicesButton" role="button">Services</a>
                 <a href="#" class="menuLinks" id="aboutButton" role="button">About</a>
             </div>
             <div id = "userMenu">
-                <a href="#" class="menuLinks">My Loans</a>
+                <a href="#" class="menuLinks" id="myLoans" role="button">My Loans</a>
                 <a href="#" class="menuLinks" id="myAccount" role="button">My Account</a>
             </div> 
         </div>
@@ -59,23 +58,6 @@
         <div class="fixed-overlay">
             <div class="modal">
                 <div class="popUpWindow">
-                    <div class="navigationButtons">
-                        <input type="button" value="X" class="closeButton">
-                    </div>
-                    <h1>City Library</h1>
-                    <h2>Welcome to City Library,</h2>
-                    <span>
-                        your community hub for knowledge, discovery, and connection. 
-                        Established in 1987, we've been serving our community for over
-                        35 years with a commitment to providing accessible information
-                        and resources for all. Our Mission At City Library, we believe
-                        that access to information is
-                        a fundamental right. Our mission is to inspire lifelong
-                        learning, advance knowledge, and strengthen our community
-                        by providing free access to information, resources, 
-                        and experiences.
-                    </span>
-                    
                 </div>
             </div>
         </div>
@@ -259,7 +241,7 @@
             </div>
         </div>
     </div>
-    <script src = "script.js"></script>
+    <script type="module" src = "script.js"></script>
     </main>
 </body>
 
