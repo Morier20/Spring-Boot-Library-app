@@ -1,15 +1,12 @@
-package com.LibraryApp.Library;
+package com.LibraryApp.Library.Books;
 
-import com.LibraryApp.Library.Books.Book;
-import com.LibraryApp.Library.Books.BookRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class ServicesImpl implements Services {
+public class ServicesImpl implements BookRepo.Services {
     @Autowired
     BookRepo repo;
 

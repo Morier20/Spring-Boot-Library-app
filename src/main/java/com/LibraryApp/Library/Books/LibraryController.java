@@ -1,6 +1,5 @@
-package com.LibraryApp.Library;
+package com.LibraryApp.Library.Books;
 
-import com.LibraryApp.Library.Books.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,10 +11,10 @@ import java.util.List;
 @RestController
 public class LibraryController {
 
-    private final Services services;
+    private final BookRepo.Services services;
 
     @Autowired
-    public LibraryController(Services services) {
+    public LibraryController(BookRepo.Services services) {
         this.services = services;
     }
 
