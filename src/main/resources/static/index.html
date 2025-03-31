@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menuBarContainer">
+            <div id="logoText">
+               <a href="#" class="menuLinks">City Library Home</a> 
+            </div>
+            <div id="menu">
+                <a href="#" class="menuLinks" id="homeButton" role="button">Home</a>
+                <a href="#" class="menuLinks" id="browseButton" role="button">Browse</a>
+                <a href="#" class="menuLinks" id="eventsButton" role="button">Events</a>
+                <a href="#" class="menuLinks" id="servicesButton" role="button">Services</a>
+                <a href="#" class="menuLinks" id="aboutButton" role="button">About</a>
+            </div>
+            <div id="userMenu">
+                <a href="#" class="menuLinks" id="myLoans" role="button">My Loans</a>
+                <a href="#" class="menuLinks" id="myAccount" role="button">My Account</a>
+            </div> 
+        </div>
+    </header>
+
+    <main>
+        <div class="searchBarField">
+            <div id="search">
+                <input type="text" placeholder="Search for books, authors, subjects...">
+                <input type="button" value="🔍" id="searchButton"/>
+            </div>
+        </div>
+
+        <!-- Sign-In Modal -->
+        <div class="fixed-overlaySingIn">
+            <div class="modalSignIn">
+                <div class="popUpWindowSingIn">
+                    <div class="composition">
+                        <div class="logInMenu">
+                            <h1>Sign in</h1>
+                            <input type="text" placeholder="Login">
+                            <input type="password" placeholder="Password">
+                            <div class="logButtons">
+                                <input type="button" value="Login">
+                                <span>or</span>
+                                <a>Sign in</a>
+                            </div>
+                        </div>
+                        <img src="src/library.jpg" alt="Library">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-overlay">
+            <div class="modal">
+                <div class="popUpWindow"></div>
+            </div>
+        </div>
+
+        <div class="arrivals">
+            <h1 class="title">New arrivals</h1>
+            <div class="bookPanels" id="bookPanelsArrivals"></div>
+        </div>
+
+        <div class="browseCategories">
+            <h1 class="title">Browse by Category</h1>                
+        </div>
+
+        <div class="recommndedForYou">
+            <h1 class="title">Recommended for You</h1>
+            <div class="bookPanels" id="bookPanelsRecommended"></div>
+        </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
