@@ -19,12 +19,10 @@ public class LibraryController {
         this.services = services;
     }
 
-    // Получаем список всех книг
     @GetMapping("/books")
     public List<Book> showAll() {
         return services.showAllBooks();
     }
-    // Добавляем новую книгу
     @PostMapping("/newBook")
     public void addBook(@RequestBody Book book) {
         services.addNewBook(book);
