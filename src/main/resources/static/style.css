@@ -1,6 +1,7 @@
 body, html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
   width: 100%;
@@ -12,13 +13,16 @@ body, html {
 }
 head{
   padding-top: 0%;
+  width: 100%;
+}
+header{
+  width: 100%;
 }
 .menuBarContainer {
-  position: fixed;
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
-  height: 5vh; 
+  height: 5vh;
   background-color: rgb(31, 42, 59); 
   word-wrap: break-word;
   word-break: break-word;
@@ -27,34 +31,40 @@ head{
   z-index: 101;
 }
 #logoText {
+  margin-left: 1vw;
   font-size: clamp(16px, 3vh, 24px);
   white-space: nowrap;
-}
-#menu {
-  display: flex; 
-  gap: 3vw; 
-  font-size: clamp(14px, 1.7vh, 18px);
-  flex-grow: 1; 
-  justify-content: center;
-  flex-wrap: wrap;
 }
 .menuLinks {
   outline: none; 
   text-decoration: none; 
   color: white;
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
   white-space: nowrap;
 }
+#menu {
+  display: flex; 
+  gap: 1vw; 
+  font-size: clamp(14px, 1.7vh, 18px);
+  flex-grow: 1; 
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 #userMenu {
   display: flex; 
-  gap: 3vw; 
+  height: 5vh;
+  flex-direction: row;
   font-size: clamp(14px, 1.7vh, 18px);
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  min-width: 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin-right: 1vw;
 }
 main{
-  padding-top:5vh;
+  width: 100%;
 }
 .searchBarField {
   display: flex; 
@@ -72,7 +82,7 @@ main{
   height: 5vh;
   max-width: 800px;
 }
-input[type="text"] {
+input[type="text"],input[type="password"] {
   display: flex;
   width: 100%;
   padding: 10px 40px 10px 15px; 
@@ -107,6 +117,7 @@ input[type="text"] {
 }
 
 .title {
+  margin-bottom: 2%;
   margin-left: 5%; 
   font-size: clamp(24px, 4vh, 32px);
   width: 100%;
@@ -148,19 +159,20 @@ input[type="text"] {
   border-radius: 0px 0px 10px 10px;
   display: flex;
   flex-direction: column;
+  justify-content: left;
   background-color: white;
-  padding: 10px;
+  padding: 1vh;
   height: 10vh;
   box-shadow: 5px 5px 15px rgb(147, 147, 147);
 }
 
 .lowerPart h3 {
-  margin: 0 0 5px 0;
-  font-size: clamp(14px, 2.5vh, 18px);
+  margin: 0 0 0.01vh 0;
+  font-size: 2vh;
 }
 
 .lowerPart span {
-  font-size: clamp(12px, 2vh, 16px);
+  font-size: 0.1vh;
   color: #555;
 }
 
@@ -276,7 +288,7 @@ input[type="text"] {
   padding-left: 5vw;
   padding-top: 5vh;
 }
-.popUpWindowSingIn input[type="text"]{
+.popUpWindowSingIn input[type="text"], input[type="password"]{
   width: 15vw;
   margin-left: 5vw;
   margin-top: 5vh;

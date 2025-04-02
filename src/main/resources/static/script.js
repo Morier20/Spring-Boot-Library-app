@@ -1,9 +1,10 @@
 'use strict';
 
-import { modalManipulation } from "./menuModal.js";
-import { signInModal } from "./signIn.js";
-import { dataFromDb } from "./dataFromDb.js";
-import { categoryPanels } from "./categoryPanels.js";
+import { modalManipulation } from "./components/menuModal.js";
+import { signInModal } from "./components/signIn.js";
+import { displayingBooksPanels } from "./components/bookPanels.js";
+import { categoryPanels } from "./components/categoryPanels.js";
+import { displayNewArrivals } from "./components/bookPanels.js";
 const popUpWindow = document.querySelector('.popUpWindow');
 const modalWindow = document.querySelector('.fixed-overlay'); 
 
@@ -91,22 +92,18 @@ homeButton.addEventListener('click', (event) =>{
 document.addEventListener("DOMContentLoaded", () => {
     const arrivalsContainer = document.querySelector("#bookPanelsArrivals");
     if (arrivalsContainer) {
-        dataFromDb(arrivalsContainer, 4);
+        displayNewArrivals();
     }
-
     const recommendedContainer = document.querySelector("#bookPanelsRecommended");
     if (recommendedContainer) {
-        dataFromDb(recommendedContainer, 20);  
+        displayingBooksPanels();  
     }
-
     const browseCategories = document.getElementsByClassName('browseCategories')[0];
     if(browseCategories) {
         categoryPanels(browseCategories);
     }
 
 });
-fetch("http://localhost:8080/arrivals")
-        .then(response => response.json())
-        .then(data => console.log(data))
+
 
 

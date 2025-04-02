@@ -1,5 +1,6 @@
 package com.LibraryApp.Library.Arrivals;
 
+import com.LibraryApp.Library.Books.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
